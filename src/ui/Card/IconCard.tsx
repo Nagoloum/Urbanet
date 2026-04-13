@@ -1,6 +1,7 @@
+import { LucideIcon } from "lucide-react";
 
 type IconCardProps = {
-  icon: React.ReactNode;
+  icon: LucideIcon;
   title: string;
   description: string;
 };
