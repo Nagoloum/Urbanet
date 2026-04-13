@@ -1,0 +1,37 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-white);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --color-primary: #7c3aed;
+  --color-white: #ffffff;
+  --color-dark: #0f172a;
+  --color-gray: #94a3b8;
+
+  /* Fonts */
+  --font-main: 'Inter', sans-serif;
+
+  /* Font sizes */
+  --text-hero: 64px;
+  --text-xl: 20px;
+  --text-md: 16px;
+
+  /* Radius */
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* Shadows */
+  --shadow-card: 0 10px 30px rgba(0,0,0,0.2);
+}
