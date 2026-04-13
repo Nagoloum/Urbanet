@@ -11,11 +11,9 @@ export default function HeroContent() {
   return (
     <div className="flex flex-col gap-10 relative">
       
-      {/* HEADER */}
       <div className="flex justify-between items-center">
         <Logo />
 
-        {/* Nav Desktop */}
         <div className="flex justify-between gap-12 max-[750px]:hidden">
           {navLinks.map((link) => (
             <div key={link.name} onClick={() => setActiveTab(link.name)}>

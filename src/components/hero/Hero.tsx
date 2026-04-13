@@ -25,7 +25,6 @@ export default function Hero() {
   return (
     <section className="relative  overflow-hidden">
 
-      {/* CAROUSEL */}
       <AnimatePresence custom={direction}>
         <motion.img
           key={index}
@@ -38,7 +37,7 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
-          onDragEnd={(e, info) => {
+          onDragEnd={(_e, info) => {
             if (info.offset.x < -100) paginate(1);
             if (info.offset.x > 100) paginate(-1);
           }}
@@ -48,7 +47,6 @@ export default function Hero() {
 
       <div className="absolute inset-0 bg-black/40" />
 
-      {/* CONTENT */}
       <div className="relative z-10 h-full flex flex-col justify-between px-16 py-6 max-[750px]:px-6 max-[750px]:py-4">
 
         <HeroContent />
