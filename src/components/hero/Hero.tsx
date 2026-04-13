@@ -5,7 +5,7 @@ import HeroCard from "./HeroCard";
 import HeroPagination from "./HeroPagination";
 import HeroClients from "./HeroClient";
 import { images } from "../../data/CarousselImg";
-import "./Hero.css";
+import "./hero.css";
 
 export default function Hero() {
   const { index, direction, paginate, setIndex } = useCarousel(images.length);

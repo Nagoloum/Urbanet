@@ -11,7 +11,7 @@ export default function HeroCard() {
                 1234 Maple Avenue, Greenfield, TX
             </p>
 
-            <button className="mt-4 w-full bg-black text-white py-2 rounded rounded-lg hover:bg-gray-700 transition-all duration-300">
+            <button className="mt-4 w-full bg-black text-white py-2 rounded-lg hover:bg-gray-700 transition-all duration-300">
                 View Detail
             </button>
         </div>
